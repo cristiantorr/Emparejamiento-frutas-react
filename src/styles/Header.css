@@ -1,0 +1,38 @@
+@keyframes wave {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#header-wrapper {
+  display: flex;
+  background-color: rgb(238, 139, 157);
+  background-image: linear-gradient(to right, pink, pink, cyan, pink, pink);
+  justify-content: center;
+  padding: 3vh;
+  margin-bottom: 1vh;
+  border: 0.5vh solid black;
+}
+
+#header-fruit {
+  margin-right: 7vh;
+  margin-left: 7vh;
+  font-size: 6vh;
+  animation: wave 0.7s linear infinite;
+}
+
+#header {
+  color: white;
+  font-size: 7vh;
+  font-family: Honk;
+  background-color: transparent;
+}

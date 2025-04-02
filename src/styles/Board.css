@@ -1,0 +1,51 @@
+.row-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.row-value-hidden {
+  border: 1px solid white;
+  padding: 6vh;
+  background-color: rgb(233, 233, 3);
+  max-width: 7.44vh;
+  min-width: 7.44vh;
+  min-height: 7.4vh;
+  max-height: 7.4vh;
+  font-size: 5vh;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes breathing {
+  25% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.row-value-hidden-animation {
+  animation: rotate 0.25s linear;
+}
+.row-value-visible {
+  font-size: 5.5vh;
+  border: 1px solid white;
+  padding: 6vh;
+  background-color: green;
+}
+.row-value-focus {
+  font-size: 5.5vh;
+  border: 1px solid white;
+  padding: 6vh;
+  background-color: blue;
+}
